@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVCONF 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -39,6 +42,15 @@
 
     <div class="speaker-grid">
 
+       <article class="speaker-card">
+        <img src="./assets/demis.png" alt="Photo of Demis Hassabis" class="speaker-photo">
+        <div class="speaker-body">
+          <span class="tag">CLOUD & DEVOPS</span>
+          <h3 class="speaker-name">Demis Hassabis</h3>
+          <p class="speaker-title">Co-Founder and CEO, Google DeepMind</p>
+        </div>
+      </article>
+
       <article class="speaker-card">
         <img src="./assets/andrej.png" alt="Photo of Andrej Karpathy" class="speaker-photo">
         <div class="speaker-body">
@@ -48,12 +60,13 @@
         </div>
       </article>
 
+      
       <article class="speaker-card">
-        <img src="./assets/demis.png" alt="Photo of Demis Hassabis" class="speaker-photo">
+        <img src="./assets/mustafa.png" alt="Photo of Mustafa Suleyman" class="speaker-photo">
         <div class="speaker-body">
-          <span class="tag">CLOUD &amp; DEVOPS</span>
-          <h3 class="speaker-name">Demis Hassabis</h3>
-          <p class="speaker-title">Co-Founder and CEO, Google DeepMind</p>
+          <span class="tag">SECURITY</span>
+          <h3 class="speaker-name">Mustafa Suleyman</h3>
+          <p class="speaker-title">CEO of Microsoft AI</p>
         </div>
       </article>
 
@@ -66,16 +79,136 @@
         </div>
       </article>
 
-      <article class="speaker-card">
-        <img src="./assets/mustafa.png" alt="Photo of Mustafa Suleyman" class="speaker-photo">
-        <div class="speaker-body">
-          <span class="tag">SECURITY</span>
-          <h3 class="speaker-name">Mustafa Suleyman</h3>
-          <p class="speaker-title">CEO of Microsoft AI</p>
-        </div>
-      </article>
+      </div>
+  </section>
+  
+ <section class="pricing" id="pricing">
+    <h2 class="section-heading">Secure Your Spot</h2>
+    <p class="section-subtext">Early-bird pricing ends August 15, 2026.</p>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <p class="price-label">STANDARD</p>
+        <p class="price-amount">$399</p>
+        <p class="price-period">per person</p>
+        <hr class="price-divider">
+        <ul class="price-features">
+          <li>Access to all 3 conference days</li>
+          <li>48 curated technical talks</li>
+          <li>2 workshop sessions</li>
+          <li>Networking lunch & coffee breaks</li>
+          <li>Conference swag bag</li>
+          <li>Digital recordings (30 days)</li>
+        </ul>
+        <a href="#" class="btn btn-outline">Get Standard</a>
+      </div>
+
+      <div class="price-card price-card-featured">
+        <p class="price-label">PRO</p>
+        <p class="price-amount">$749</p>
+        <p class="price-period">per person</p>
+        <hr class="price-divider">
+        <ul class="price-features">
+          <li>Everything in Standard</li>
+          <li>Unlimited workshop access</li>
+          <li>Speaker meet & greet</li>
+          <li>VIP networking dinner</li>
+          <li>Lifetime recording access</li>
+          <li>1-on-1 mentorship (30 min)</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Get Pro</a>
+      </div>
+
+      <div class="price-card">
+        <p class="price-label">TEAM</p>
+        <p class="price-amount">$5,999</p>
+        <p class="price-period">up to 10 people</p>
+        <hr class="price-divider">
+        <ul class="price-features">
+          <li>Everything in Pro (10 seats)</li>
+          <li>Dedicated team lounge access</li>
+          <li>Private workshop booking</li>
+          <li>Company logo on event page</li>
+          <li>Recruitment booth (1 day)</li>
+          <li>Priority customer support</li>
+        </ul>
+        <a href="#" class="btn btn-outline">Contact Us</a>
+      </div>
 
     </div>
   </section>
+  <section class="job-board" id="job-board">
+    <h2 class="section-heading">Join the DEVCONF Job Board</h2>
+    <p class="section-subtext">
+      Hiring teams from our sponsor companies browse this board all
+      three days of the conference. Drop your details once, get matched
+      all week.
+    </p>
+ 
+    <form class="job-form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Ada Lovelace" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="ada@example.com" required>
+        </div>
+      </div>
+ 
+      <div class="form-row">
+        <div class="form-group">
+          <label for="role">Current role</label>
+          <input type="text" id="role" name="role" placeholder="e.g. Backend Engineer">
+        </div>
+        <div class="form-group">
+          <label for="looking-for">Looking for</label>
+          <select id="looking-for" name="looking-for">
+            <option value="full-time">Full-time</option>
+            <option value="contract">Contract</option>
+            <option value="internship">Internship</option>
+            <option value="open-to-chat">Just open to chat</option>
+          </select>
+        </div>
+      </div>
+ 
+      <div class="form-group">
+        <label for="profile-link">Portfolio, GitHub, or LinkedIn link</label>
+        <input type="url" id="profile-link" name="profile-link" placeholder="https://github.com/yourname">
+      </div>
+ 
+      <button type="submit" class="btn btn-primary form-submit">Add Me to the Board</button>
+      <p class="form-note">This is a placeholder form for demo purposes — it doesn't submit anywhere yet.</p>
+    </form>
+  </section>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-top">
+      <img src="./assets/footer-logo.png" alt="DEVCONF 2026 logo" class="footer-logo">
+
+      <div class="footer-socials">
+        <a href="#" aria-label="DEVCONF on X" class="social-link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.8 22H1.6l8.1-9.3L1 2h7l4.9 6.1L18.9 2Zm-1.2 18h1.9L7.4 3.9H5.4L17.7 20Z"/></svg>
+        </a>
+        <a href="#" aria-label="DEVCONF on GitHub" class="social-link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.38.21 2.4.1 2.65.65.7 1.03 1.59 1.03 2.69 0 3.85-2.35 4.7-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+        <a href="#" aria-label="DEVCONF on LinkedIn" class="social-link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.71h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97V21h-4V9Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <p class="footer-copy">© 2026 DEVCONF. All rights reserved. Built by developers, for developers.</p>
+  </footer>
+
+</body>
+</html>
 </body>
 </html>

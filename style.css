@@ -237,3 +237,267 @@ img {
   color: var(--text-muted);
   font-size: 0.92rem;
 }
+.pricing {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 6rem 1.5rem 8rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.price-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.25rem 1.85rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card-featured {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #FFFFFF;
+  transform: scale(1.04);
+  box-shadow: 0 24px 48px -20px rgba(15, 27, 51, 0.45);
+}
+
+.price-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.price-card-featured .price-label {
+  color: var(--navy-soft);
+}
+
+.price-amount {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.3rem;
+}
+
+.price-period {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.price-card-featured .price-period {
+  color: #AEB9E0;
+}
+
+.price-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+
+.price-card-featured .price-divider {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.price-features {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.price-features li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.price-card-featured .price-features li {
+  color: #D6DCF3;
+}
+
+.price-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.price-card-featured .price-features li::before {
+  background: var(--navy-soft);
+}
+
+.price-card .btn {
+  text-align: center;
+}
+
+.price-card-featured .btn-primary {
+  background: var(--accent);
+}
+.job-board {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1.5rem 8rem;
+}
+
+.job-form {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.25rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text);
+  background: #FFFFFF;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  transition: border-color 0.15s ease;
+}
+
+.form-group input::placeholder {
+  color: #A0AAB8;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.form-submit {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+.footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2.5rem;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  height: 34px;
+  width: auto;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.social-link {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.footer-copy {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+@media (max-width: 860px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card-featured {
+    transform: none;
+    order: -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+
+  .speaker-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .job-form {
+    padding: 1.5rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
