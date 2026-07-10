@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <section class="register-section">
+    <h1 class="register-heading">Register for DEVCONF 2026</h1>
+    <form class="register-form" action="thanks.html" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="ticket-type">Ticket Type</label>
+      <select id="ticket-type" name="ticket-type" required>
+        <option value="">Select a ticket type</option>
+        <option value="general">General Admission - $299</option>
+        <option value="vip">VIP Admission - $499</option>
+        <option value="student">Student Admission - $199</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary">Submit Registration</button>
+    </form>
+    </section>
+</body>
+</html>
